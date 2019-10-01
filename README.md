@@ -16,6 +16,10 @@ Write code that prints all the numbers from 1 to 150, **inclusive.**
 
 // THE ANSWER IS
 
+for num in 1...150
+{
+    print(num)
+}
 
 
 ***
@@ -23,25 +27,68 @@ Write code that prints all the numbers from 1 to 150, **inclusive.**
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+// THE ANSWER IS
+
+for num in 142..<159
+{
+    print(num)
+}
+
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
+// THE ANSWER IS
+
+for num in 15...80
+{
+    if num % 2 == 0 {
+    print(num)
+    }
+}
 
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
+// THE ANSWER IS
+
+for num in 19...51
+{
+    if num % 2 > 0 {
+    print(num)
+    }
+}
+
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+// THE ANSWER IS
+
+for num in 1..<100
+{
+    if num % 10 == 5 {
+    print(num)
+    }
+}
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+// THE ANSWER IS
+
+for num in 1...40
+{
+    if num % 10 == 7 {
+    print(num)
+    }
+}
 
 ***
 ## Question 7
@@ -50,12 +97,30 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+// THE ANSWER IS
+
+for num in 20...150
+{
+    if num % 3 == 0 {
+    print(num)
+    }
+}
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+// THE ANSWER IS
+
+for num in 20...150
+{
+    if num % 3 == 0 && num % 2 == 0 {
+    print(num)
+    }
+}
 
 ***
 ## Question 9
@@ -64,12 +129,36 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+// THE ANSWER IS
+
+for num in 20...150
+{
+    if num % 10 == 4 {
+    print(num)
+    }
+}
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+// THE ANSWER IS
+
+for num in 20...150
+{
+    if num == 31 {
+    print(num)
+    }
+    if num == 35 {
+        print(num)
+    }
+    if num > 39 && num < 61 {
+        print(num)
+    }
+}
 
 ***
 ## Question 11
@@ -83,7 +172,7 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// this code will run forever, the while condition is that it will run while the variable i is greater than 3, the variable i already has a value of 5 to start so it is greater than 3 so the while condition starts off as true and will run the statement inside it which will add +1 to the variable i thus increasing the variable i. because of this, the loop will never end
 ```
 
 ***
@@ -96,6 +185,17 @@ var i = 5
 
 while (i > 3) {
     i += 1
+}
+
+// THE ANSWER IS
+
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 9 {
+        break
+    }
 }
 ```
 
@@ -110,6 +210,18 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+// THE ANSWER IS
+
+
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 1006{
+        break
+    }
+}
 ```
 
 ***
@@ -122,6 +234,21 @@ var i = 5
 
 while (i > 3) {
     i += 1
+}
+
+// THE ANSWER IS
+
+
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i % 2 == 0{
+        print(i)
+    }
+    if i == 1006{
+        break
+    }
 }
 ```
 
@@ -145,6 +272,11 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+
+
+// THE ANSWER IS
+
+they will output the same output, while confusing at first, it is easy to comprehend these loops, the first loop will perform the code in the brackets while the condition is true, the second loop will execute the code inside the repeat bracket as long as the condition in the while is true, similar and the same all at once
 ```
 
 # Bonus =)
